@@ -1,5 +1,4 @@
 set title
-set hidden
 set autoread
 set noautochdir
 set modelines=0
@@ -138,8 +137,8 @@ hi Underlined   ctermfg=7                       cterm=None
 hi NonText      ctermfg=8                       cterm=None
 hi SpecialKey   ctermfg=8                       cterm=None
 hi Visual                                       cterm=None
-hi Cursor                                       cterm=Reverse
-hi CursorLine                   ctermbg=0       cterm=None
+hi Cursor                                       cterm=None
+hi CursorLine   ctermfg=None    ctermbg=None    cterm=None
 hi Search       ctermfg=0       ctermbg=11      cterm=None
 hi Directory    ctermfg=None    ctermbg=None    cterm=Bold,Italic
 hi ErrorMsg     ctermfg=11      ctermbg=9       cterm=Bold
@@ -163,5 +162,6 @@ hi TabLineFill  ctermfg=15      ctermbg=4       cterm=None
 call plug#begin()
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'rstacruz/vim-closer'
 
 call plug#end()

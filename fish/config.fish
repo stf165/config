@@ -5,7 +5,7 @@ alias la "ls -A"
 alias ll "ls -l"
 alias g git
 alias e vim
-alias web 'firefox 2>/dev/null'
+alias t tmux
 alias mp ncmpcpp
 alias fm ranger
 
